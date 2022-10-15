@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+$white: white;
+$black: black;
+$gold: #bfa1008a;
+$light-green: honeydew;
+$cadet-blue: cadetblue;
+
+.color-gold {
+  color: $gold;
+}
+
+.light-green {
+  color: $light-green;
+}
+
+.cadet-blue {
+  color: $cadet-blue;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.footer {
+  height: 60px;
+  vertical-align: middle;
+}
+
+h1.huge {
+  font-size: 90px;
+}
+
+body {
+  height: 100%;
+  background-color: $light-green;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:visited {
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: $white;
+}
