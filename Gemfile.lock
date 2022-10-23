@@ -1,5 +1,4 @@
 GEM
-  bundle lock --add-platform x86_64-linux
   remote: https://rubygems.org/
   specs:
     actioncable (6.1.7)
