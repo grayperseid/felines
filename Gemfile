@@ -26,7 +26,7 @@ gem 'pry', '~> 0.13.1'
 
 # ui shit
 gem 'bootstrap', '~> 5.2.1'
-gem "font-awesome-sass", "~> 6.2.0"
+gem 'font-awesome-sass', '~> 6.2.0'
 
 
 # Use Active Storage variant
