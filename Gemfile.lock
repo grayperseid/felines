@@ -67,7 +67,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
-    bootstrap (5.2.1)
+    bootstrap (5.2.2)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.11.6, < 3)
       sassc-rails (>= 2.0.0)
@@ -89,6 +89,8 @@ GEM
     erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     font-awesome-sass (6.2.0)
       sassc (~> 2.0)
     globalid (1.0.0)
@@ -110,16 +112,12 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.6.0)
     nio4r (2.5.8)
-    nokogiri (1.13.8)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     popper_js (2.11.6)
     pry (0.13.1)
@@ -193,10 +191,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.5.2)
-      mini_portile2 (~> 2.8.0)
-    sqlite3 (1.5.2-arm64-darwin)
-    sqlite3 (1.5.2-x86_64-linux)
+    sqlite3 (1.5.3-arm64-darwin)
+    sqlite3 (1.5.3-x86_64-linux)
     thor (1.2.1)
     tilt (2.0.11)
     turbolinks (5.2.1)
@@ -228,7 +224,6 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -236,6 +231,7 @@ DEPENDENCIES
   bootstrap (~> 5.2.1)
   byebug
   capybara (>= 3.26)
+  font-awesome-rails (~> 4.7.0)
   font-awesome-sass (~> 6.2.0)
   jbuilder (~> 2.7)
   listen (~> 3.3)
