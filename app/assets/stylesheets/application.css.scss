@@ -14,4 +14,62 @@
  *= require_self
  */
 
- @import "font-awesome";
+@import "bootstrap/scss/bootstrap.scss";
+@import "font-awesome";
+
+$gold: #bfa1008a;
+$dark-gold: #8c780b8a;
+$light-green: honeydew;
+$med-mint: #7BC8BD;
+$cadet-blue: cadetblue;
+$dark-blue: #276f78;
+
+.color-gold {
+  color: $gold;
+}
+
+.light-green {
+  color: $light-green;
+}
+
+.cadet-blue {
+  color: $cadet-blue;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.footer {
+  height: 60px;
+  vertical-align: middle;
+}
+
+h1.huge {
+  font-size: 90px;
+}
+
+body {
+  height: 100%;
+  background-color: $light-green;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $cadet-blue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $cadet-blue;
+}
+
+a:hover {
+  color: $med-mint;
+  background-color: transparent;
+}
+
+.link {
+  color: white;
+}

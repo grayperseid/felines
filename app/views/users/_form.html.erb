@@ -1,0 +1,114 @@
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script>
+  $(document).ready(function() {
+    $('input[name="birth-date"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true,
+      minYear: 1910,
+      maxYear: parseInt(moment().format('YYYY'),10)
+    }, function() {
+    });
+  });
+</script>
+
+
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="actions">
+    <section class="h-100 h-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-8 col-xl-6">
+            <div class="card rounded-3">
+              <img src="https://cdn.pixabay.com/photo/2015/11/15/22/09/cat-1044914_640.jpg"
+                class="w-60" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                alt="Sample photo">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">registration info</h3>
+
+                <form class="px-md-2 row">
+                  <div class=row>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <%= form.text_field "first_name", class: "form-control" %>
+                        <%= form.label "first_name", "first name", class:"form-label" %>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <%= form.text_field "last_name", class: "form-control" %>
+                        <%= form.label "last_name", "last name", class:"form-label" %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <%= form.text_field "email", class: "form-control" %>
+                        <%= form.label "email", "email", class:"form-label" %>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <%= form.text_field "phone", class: "form-control" %>
+                        <%= form.label "phone", "phone", class:"form-label" %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline datepicker">
+                        <%= form.text_field "birth_date", name: "birth-date", class: "form-control" %>
+                        <%= form.label "birth_date", "birth date", class:"form-label" %>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <%= form.text_field "address_state", class: "form-control" %>
+                        <%= form.label "address_state", "us state", class:"form-label" %>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">
+                    what is your main reason for joining the <span class="comforter-brush-med">fff</span> crew?
+                  </h3>
+                  <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                    <div class="col-md-12 mb-4">
+                      <div class="form-group">
+                        <form class="form-horizontal" role="form">
+                          <label class="radio-inline"> <input type="radio" name="season" id="foster" value="foster" checked> fostering </label>
+                          <label class="radio-inline"> <input type="radio" name="season" id="adopt" value="adopt"> adopting </label>
+                          <label class="radio-inline"> <input type="radio" name="season" id="adopt" value="volunteer"> volunteering </label>
+                          <label class="radio-inline"> <input type="radio" name="season" id="ridealong" value="ridealong"> networking </label>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div id=user-submit" class="text-center">
+                    <%= form.submit "submit", class:"user-reg-submit btn btn-lg mb-1" %>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<% end %>

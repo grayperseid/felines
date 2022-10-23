@@ -1,0 +1,24 @@
+$cadet-blue: cadetblue;
+
+.user-reg-submit {
+  background-color: $cadet-blue !important;
+  color: white !important;
+}
+
+.comforter-brush-med {
+  font-family: 'Comforter Brush';
+  font-size: 35px;
+  color: $cadet-blue;
+}
+
+input[type="radio"]{
+  margin: 0 8px 0 20px;
+}
+
+.white-smoke {
+  color: white-smoke !important;
+}
+
+img {
+  height: 50%;
+}

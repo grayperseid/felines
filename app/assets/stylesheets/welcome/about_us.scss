@@ -1,0 +1,18 @@
+$cadet-blue: cadetblue;
+$gold: #bfa1008a;
+$dark-gold: #8c780b8a;
+
+.about-us-text {
+  color: $cadet-blue;
+}
+
+.golden-quote {
+  color: $gold;
+  font-size: 40px;
+  font-family: Parisienne;
+
+  p {
+    font-size: 30px;
+    color: $dark-gold;
+  }
+}

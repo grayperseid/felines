@@ -21,4 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* TODO:
+
+design notice and error banners
+show past adoptions
+cat photo for reg form
