@@ -29,3 +29,4 @@ test:
 production:
   <<: *default
   database: felines_production
+  host: ENV['DATABASE_URL']
