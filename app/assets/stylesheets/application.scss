@@ -11,14 +11,21 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require_self
- *= require font-awesome
  */
 
-// @import "bootstrap/scss/bootstrap";
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
+// @import 'bootstrap';
+@import "bootstrap/scss/bootstrap";
+@import 'font-awesome';
+// @import url('http://fonts.googleapis.com/css?family=Montserrat');
+// @import url('http://fonts.googleapis.com/css?family=Parisienne');
+// @import url('http://fonts.googleapis.com/css?family=Comforter+Brush');
+
+// @font-face {
+//    font-family: 'Montserrat';
+//    src: asset-url('http://fonts.googleapis.com/css?family=Montserrat') format('woff');
+//    font-weight: normal;
+//    font-style: normal;
+// }
 
 $gold: #bfa1008a;
 $dark-gold: #8c780b8a;
@@ -55,7 +62,7 @@ h1.huge {
 body {
   height: 100%;
   background-color: $light-green;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
 }
 
 a {
