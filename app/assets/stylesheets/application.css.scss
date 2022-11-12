@@ -12,9 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import "font-awesome";
 
 $gold: #bfa1008a;

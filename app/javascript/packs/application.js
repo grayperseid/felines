@@ -15,6 +15,3 @@ require("stylesheets/application.scss")
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
-
-// create user db_user with password 'password';
