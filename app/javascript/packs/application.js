@@ -17,4 +17,4 @@ Turbolinks.start()
 ActiveStorage.start()
 
 
-create user db_user with password 'password';
+// create user db_user with password 'password';
