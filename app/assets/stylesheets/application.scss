@@ -13,18 +13,11 @@
  *= require_tree .
  */
 
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
 @import "bootstrap/scss/bootstrap";
 @import 'font-awesome';
-// @import url('http://fonts.googleapis.com/css?family=Montserrat');
 // @import url('http://fonts.googleapis.com/css?family=Parisienne');
 // @import url('http://fonts.googleapis.com/css?family=Comforter+Brush');
-
-// @font-face {
-//    font-family: 'Montserrat';
-//    src: asset-url('http://fonts.googleapis.com/css?family=Montserrat') format('woff');
-//    font-weight: normal;
-//    font-style: normal;
-// }
 
 $gold: #bfa1008a;
 $dark-gold: #8c780b8a;
