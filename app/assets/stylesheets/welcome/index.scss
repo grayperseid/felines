@@ -7,3 +7,18 @@ $cadet-blue: cadetblue;
 .welcome-link {
   color: $cadet-blue;
 }
+
+.sized-logo {
+  width: 560px;
+  height: 420px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+@media(max-width: 420px){
+  .sized-logo {
+    width: 375px;
+    height: 300px;
+  }
+}
