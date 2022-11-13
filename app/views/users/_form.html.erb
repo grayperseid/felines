@@ -27,7 +27,7 @@
       </ul>
     </div>
   <% end %>
-  
+
   <div class="actions">
     <section class="h-100 h-custom">
       <div class="container py-5 h-100">
@@ -74,7 +74,7 @@
                   <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
                     <div class="col-md-6 mb-4">
                       <div class="form-outline datepicker">
-                        <%= form.text_field "birth_date", name: "birth-date", class: "form-control" %>
+                        <%= form.text_field "birth_date", class: "form-control" %>
                         <%= form.label "birth_date", "birth date", class:"form-label" %>
                       </div>
                     </div>
@@ -92,10 +92,10 @@
                     <div class="col-md-12 mb-4">
                       <div class="form-group">
                         <form class="form-horizontal" role="form">
-                          <label class="radio-inline"> <input type="radio" name="season" id="foster" value="foster" checked> fostering </label>
-                          <label class="radio-inline"> <input type="radio" name="season" id="adopt" value="adopt"> adopting </label>
-                          <label class="radio-inline"> <input type="radio" name="season" id="adopt" value="volunteer"> volunteering </label>
-                          <label class="radio-inline"> <input type="radio" name="season" id="ridealong" value="ridealong"> networking </label>
+                          <label class="radio-inline"> <input type="radio" name="subscription" id="foster" value="foster_interest" checked> fostering </label>
+                          <label class="radio-inline"> <input type="radio" name="subscription" id="adopt" value="adoption_interest"> adoption </label>
+                          <label class="radio-inline"> <input type="radio" name="subscription" id="adopt" value="volunteer_interest"> volunteering </label>
+                          <label class="radio-inline"> <input type="radio" name="subscription" id="ridealong" value="ridealong"> networking </label>
                         </form>
                       </div>
                     </div>

@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   # POST /users or /users.json
   def create
     @user = User.new(user_params)
+    assign_subscription_reason(params[:subscription])
 
     respond_to do |format|
       if @user.save
@@ -64,10 +65,23 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     end
 
+    def assign_subscription_reason(reason)
+      case reason.to_sym
+      when :adoption_interest
+        @user.adoption_interest = true
+      when :foster_interest
+        @user.foster_interest = true
+      when :volunteer_interest
+        @user.volunteer_interest = true
+      else
+        @user.ridealong = true
+      end
+    end
+
     # Only allow a list of trusted parameters through.
     def user_params
       params.fetch(:user, {}).permit(:first_name, :last_name, :email, :phone,
-                                 :birth_date, :address_state, :adoption_interest,
-                                 :foster_interest, :volunteer_interest)
+        :birth_date, :address_state, :subscription, :adoption_interest, :foster_interest,
+        :volunteer_interest, :ridealong)
     end
 end
