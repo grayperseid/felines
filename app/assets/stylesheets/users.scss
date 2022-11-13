@@ -1,5 +1,13 @@
 $dark-gold: #8c780b8a;
+$light-green: honeydew;
 $cadet-blue: cadetblue;
+
+#error_explanation {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: $dark-gold;
+  color: $light-green;
+}
 
 .user-reg-submit {
   background-color: $cadet-blue !important;

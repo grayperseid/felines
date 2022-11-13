@@ -17,12 +17,10 @@
 
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
+    <div id="error_explanation" class="text-center">
       <ul>
         <% user.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <p><%= error.full_message %></p>
         <% end %>
       </ul>
     </div>
@@ -100,7 +98,8 @@
                     </div>
                     <div class="text-center">
                       <br>
-                        <i>please download and return the below applications if you are interested in our fostering or adopting programs</i>
+                        <i>please download and return the below applications if you
+                          are interested in our fostering or adopting programs</i>
                     </div>
                   </div>
                   <div id=user-submit" class="text-center">

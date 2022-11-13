@@ -12,7 +12,6 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    @header = "welcome!"
     @user = User.new
   end
 
@@ -28,10 +27,10 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         format.html { redirect_to root_path(@user), notice: "your account was successfully created, we will be in touch" }
-        format.json { render :show, status: :created, location: @user }
+        # format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        # format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
