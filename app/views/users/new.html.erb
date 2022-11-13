@@ -1,13 +1,17 @@
 <%= render 'form', user: @user %>
 
 <div class="text-center">
-  <h3>
-    <%= link_to "foster application", asset_path("foster-application.pdf", skip_pipeline: true) %>
+  <h3 class="application-downloads">
+    <%= link_to "foster application",
+        asset_path("foster-application.pdf", skip_pipeline: true)
+    %>
   </h3>
 </div>
 
-<!-- <div class="text-center">
-  <h3>
-    <%# <%= link_to "adoption application", asset_path("foster-application.pdf", skip_pipeline: true) %> %>
+<div class="text-center pb-4">
+  <h3 class="color-gold">
+    <%= link_to "adoption application",
+        asset_path("adoption-application.pdf", skip_pipeline: true)
+    %>
   </h3>
-</div> -->
+</div>
