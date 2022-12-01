@@ -29,6 +29,13 @@ input[type="radio"]{
 }
 
 .application-downloads
-  a {
-    color: $dark-gold !important;
+a {
+  color: $dark-gold !important;
+}
+
+@media(max-width: 420px){
+  .user-img-size {
+    height: 100%;
+    width: auto;
   }
+}
